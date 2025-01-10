@@ -115,3 +115,101 @@ button[id="1.13"] {
 button[id="1.13"]:hover {
   background-color: rgb(240, 0, 113); /* Slightly Darker Red */
 }
+
+button[id="2.01"] {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+button[id="2.01"]:hover {
+  background-color: rgb(240, 0, 0); /* Slightly Darker Red */
+}
+
+button[id="3.01"] {
+  background-color: rgb(255, 128, 0);
+  cursor: pointer;
+}
+
+button[id="3.01"]:hover {
+  background-color: rgb(240, 113, 0); /* Slightly Darker Red */
+}
+button[id="4.01"] {
+  background-color: rgb(255, 255, 0);
+  cursor: pointer;
+}
+
+button[id="4.01"]:hover {
+  background-color: rgb(240, 240, 0); /* Slightly Darker Red */
+}
+button[id="5.01"] {
+  background-color: rgb(128, 255, 0);
+  cursor: pointer;
+}
+
+button[id="5.01"]:hover {
+  background-color: rgb(113, 240, 0); /* Slightly Darker Red */
+}
+button[id="6.01"] {
+  background-color: rgb(0, 255, 0);
+  cursor: pointer;
+}
+
+button[id="6.01"]:hover {
+  background-color: rgb(0, 240, 0); /* Slightly Darker Red */
+}
+button[id="7.01"] {
+  background-color: rgb(0, 255, 128);
+  cursor: pointer;
+}
+
+button[id="7.01"]:hover {
+  background-color: rgb(0, 240, 113); /* Slightly Darker Red */
+}
+button[id="8.01"] {
+  background-color: rgb(0, 255, 255);
+  cursor: pointer;
+}
+
+button[id="8.01"]:hover {
+  background-color: rgb(0, 240, 240); /* Slightly Darker Red */
+}
+button[id="9.01"] {
+  background-color: rgb(0, 128, 255);
+  cursor: pointer;
+}
+
+button[id="9.01"]:hover {
+  background-color: rgb(0, 113, 255); /* Slightly Darker Red */
+}
+button[id="10.01"] {
+  background-color: rgb(0, 0, 255);
+  cursor: pointer;
+}
+
+button[id="10.01"]:hover {
+  background-color: rgb(0, 0, 240); /* Slightly Darker Red */
+}
+button[id="11.01"] {
+  background-color: rgb(128, 0, 255);
+  cursor: pointer;
+}
+
+button[id="11.01"]:hover {
+  background-color: rgb(113, 0, 240); /* Slightly Darker Red */
+}
+button[id="12.01"] {
+  background-color: rgb(255, 0, 255);
+  cursor: pointer;
+}
+
+button[id="12.01"]:hover {
+  background-color: rgb(240, 0, 240); /* Slightly Darker Red */
+}
+button[id="13.01"] {
+  background-color: rgb(255, 0, 128);
+  cursor: pointer;
+}
+
+button[id="13.01"]:hover {
+  background-color: rgb(240, 0, 113); /* Slightly Darker Red */
+}
