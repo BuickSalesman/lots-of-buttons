@@ -12,3 +12,8 @@ body {
 #button-container {
   outline: 1px solid black;
 }
+
+button {
+  height: 5vh;
+  width: 5vw;
+}
