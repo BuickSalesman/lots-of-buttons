@@ -41,8 +41,13 @@ function changeColumnColor(button) {
 
   let columnButtons = Array.from(document.querySelectorAll(`button[id$=${escapedSuffix}]`));
   columnButtons = columnButtons.filter((colButton) => colButton !== button);
-  columnButtons.forEach((button) => {
-    button.style.backgroundColor = "rgb(0,0,0)";
+
+  let parentColor = window.getComputedStyle(button).backgroundColor;
+
+  columnButtons.forEach((btn, index) => {
+    setTimeout(() => {
+      btn.style.backgroundColor = parentColor;
+    }, 500 * index);
   });
 }
 
