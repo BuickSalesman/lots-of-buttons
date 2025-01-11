@@ -38,7 +38,7 @@ function changeColumnColor(button) {
   let buttonSuffix = button.id.slice(-3);
   let escapedSuffix = buttonSuffix.replace(".", "\\.");
 
-  let columnButtons = Array.from(document.querySelectorAll(`button[id$=${escapedSuffix}]`));
+  let columnButtons = Array.from(document.querySelectorAll(`button[id$="${escapedSuffix}"]`));
   columnButtons = columnButtons.filter((colButton) => colButton !== button);
 
   let parentColor = window.getComputedStyle(button).backgroundColor;
@@ -53,7 +53,8 @@ function changeColumnColor(button) {
 function changeRowColor(button) {
   let buttonPrefix = button.id.slice(0, -3);
   let escapedPrefix = buttonPrefix.replace(".", "\\.");
-  let rowButtons = Array.from(document.querySelectorAll(`button[id$=${escapedPrefix}]`));
+
+  let rowButtons = Array.from(document.querySelectorAll(`button[id^="${escapedPrefix}"]`));
   rowButtons = rowButtons.filter((rowButton) => rowButton !== button);
 
   let parentColor = window.getComputedStyle(button).backgroundColor;
