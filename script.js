@@ -35,7 +35,6 @@ function clear(button) {
 }
 
 function changeColumnColor(button) {
-  console.log(`column ${button.id} change!`);
   let buttonSuffix = button.id.slice(-3);
   let escapedSuffix = buttonSuffix.replace(".", "\\.");
 
@@ -47,10 +46,21 @@ function changeColumnColor(button) {
   columnButtons.forEach((btn, index) => {
     setTimeout(() => {
       btn.style.backgroundColor = parentColor;
-    }, 500 * index);
+    }, 50 * index);
   });
 }
 
 function changeRowColor(button) {
-  console.log(`row ${button.id} change!`);
+  let buttonPrefix = button.id.slice(0, -3);
+  let escapedPrefix = buttonPrefix.replace(".", "\\.");
+  let rowButtons = Array.from(document.querySelectorAll(`button[id$=${escapedPrefix}]`));
+  rowButtons = rowButtons.filter((rowButton) => rowButton !== button);
+
+  let parentColor = window.getComputedStyle(button).backgroundColor;
+
+  rowButtons.forEach((btn, index) => {
+    setTimeout(() => {
+      btn.style.backgroundColor = parentColor;
+    }, 50 * index);
+  });
 }
